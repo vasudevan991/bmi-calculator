@@ -20,22 +20,22 @@ with col3:
         # Determine BMI category
         if bmi < 18.5:
             category = "Underweight"
-            color = "warning"
+            color = "Underweight"
         elif bmi < 25:
             category = "Normal weight"
-            color = "success"
+            color = "Normal weight"
         elif bmi < 30:
             category = "Overweight"
-            color = "warning"
+            color = "Overweight"
         elif bmi < 35:
             category = "Obesity Class I"
-            color = "danger"
+            color = "Obesity Class I"
         elif bmi < 40:
             category = "Obesity Class II"
-            color = "danger"
+            color = "Obesity Class II"
         else:
             category = "Obesity Class III"
-            color = "danger"
+            color = "obesity class III"
 
         # Show BMI and category with color
         st.metric("Your BMI", f"{bmi:.2f}")
